@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF6F9FD0-3546-402B-B742-3306D31211BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MAXSharp</RootNamespace>
+    <AssemblyName>MAXSharp</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="DiffSet\BatteryStatus.cs" />
+    <Compile Include="DiffSet\DeviceDiffSet.cs" />
+    <Compile Include="DiffSet\DiffHouse.cs" />
+    <Compile Include="DiffSet\HeatingThermostatDiff.cs" />
+    <Compile Include="DiffSet\ShutterContactDiff.cs" />
+    <Compile Include="ELVMAX_Data\Base64.cs" />
+    <Compile Include="ELVMAX_Data\MAX_Exception.cs" />
+    <Compile Include="ELVMAX_Data\TokenizeMessage.cs" />
+    <Compile Include="ELVMAX_Data\Messages\C_Message.cs" />
+    <Compile Include="ELVMAX_Data\Messages\H_Message.cs" />
+    <Compile Include="ELVMAX_Data\Messages\IMAXMessage.cs" />
+    <Compile Include="ELVMAX_Data\Messages\L_Message.cs" />
+    <Compile Include="ELVMAX_Data\Messages\M_Message.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\HeatingThermostat.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\HeatingThermostatPlus.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\IMAXDevice.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\PushButton.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\ShutterContact.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\UnknownDevice.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Devices\WallMountedThermostat.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Metadata\House.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Metadata\Room.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Modes\ShutterContactModes.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Modes\ThermostatModes.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Types\DeviceTypes.cs" />
+    <Compile Include="ELVMAX_Data\Messages\Types\MAXMessageTypes.cs" />
+    <Compile Include="MAXEncodeDecode.cs" />
+    <Compile Include="MAXMonitoringThread.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="DiffSet\" />
+    <Folder Include="ELVMAX_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\sonesFastSerializer\sonesFastSerializer.csproj">
+      <Project>{8A2C05AA-6E56-414B-A43C-7173FC34DB24}</Project>
+      <Name>sonesFastSerializer</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

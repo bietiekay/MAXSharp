@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAXSharp", "MAXSharp\MAXSharp.csproj", "{FF6F9FD0-3546-402B-B742-3306D31211BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sonesFastSerializer", "sonesFastSerializer\sonesFastSerializer.csproj", "{8A2C05AA-6E56-414B-A43C-7173FC34DB24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAXSharpExample", "MAXSharpExample\MAXSharpExample.csproj", "{ECF86F64-C144-419D-B761-9803EC59465D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A2C05AA-6E56-414B-A43C-7173FC34DB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2C05AA-6E56-414B-A43C-7173FC34DB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2C05AA-6E56-414B-A43C-7173FC34DB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2C05AA-6E56-414B-A43C-7173FC34DB24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF86F64-C144-419D-B761-9803EC59465D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF86F64-C144-419D-B761-9803EC59465D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF86F64-C144-419D-B761-9803EC59465D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF86F64-C144-419D-B761-9803EC59465D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF6F9FD0-3546-402B-B742-3306D31211BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF6F9FD0-3546-402B-B742-3306D31211BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF6F9FD0-3546-402B-B742-3306D31211BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF6F9FD0-3546-402B-B742-3306D31211BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MAXSharp\MAXSharp.csproj
+	EndGlobalSection
+EndGlobal
