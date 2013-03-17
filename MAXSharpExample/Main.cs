@@ -12,7 +12,6 @@ namespace MAXSharpExample
 		{
 			ConcurrentQueue<IDeviceDiffSet> EventQueue = new ConcurrentQueue<IDeviceDiffSet>();
 
-
 			String ELVMAX_Cube_IP_Adress = "192.168.178.82";
 			Int32 ELVMAX_Cube_Port = 62910;
 
