@@ -27,6 +27,6 @@ Global
 		{FF6F9FD0-3546-402B-B742-3306D31211BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MAXSharp\MAXSharp.csproj
+		StartupItem = MAXSharpExample\MAXSharpExample.csproj
 	EndGlobalSection
 EndGlobal

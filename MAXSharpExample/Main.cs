@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using MAXSharp;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace MAXSharpExample
 {
@@ -32,8 +33,15 @@ namespace MAXSharpExample
 				Thread.Sleep(100);
 			}
 
+			Console.WriteLine("Connected!");
+
 			// ELVMax.theHouse now contains all information about the current ELV MAX cube configuration
 			// from now on the thread generates diffs to that every 10 seconds (or what you said...)
+			List<IMAXDevice> Devices = ELVMax.theHouse.GetAllDevices();
+			foreach(IMAXDevice _device in Devices)
+			{
+				Console.WriteLine(_device.Name+" - "+_device.RFAddress);
+			}
 
 			while(true)
 			{
@@ -42,7 +50,7 @@ namespace MAXSharpExample
 					foreach(IDeviceDiffSet _diffset in EventQueue)
 					{
 						// here are the diffs...
-
+					 	Console.WriteLine(_diffset);
 					}
 				}
 

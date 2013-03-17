@@ -88,7 +88,7 @@ namespace MAXSharp
 				
 				for(int i=0;i<=2;i++)
 				{
-					sb.Append(array[i]);
+					sb.Append(string.Format("{0:x}", array[i]));
 				}
 				// get data 1 and data 2 out
 				// on position 5,6
