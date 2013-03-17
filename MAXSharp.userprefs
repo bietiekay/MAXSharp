@@ -1,10 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MAXSharp/ELVMAX_Data/Messages/S_Message.cs">
+    <Files>
+      <File FileName="MAXSharpExample/Main.cs" Line="25" Column="29" />
+      <File FileName="MAXSharp/MAXMonitoringThread.cs" Line="106" Column="21" />
+      <File FileName="MAXSharp/ELVMAX_Data/Messages/S_Message.cs" Line="15" Column="3" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="MAXSharp" expanded="True" />
+          <Node name="MAXSharp" expanded="True">
+            <Node name="ELVMAX_Data" expanded="True">
+              <Node name="Messages" expanded="True">
+                <Node name="Types" expanded="True" />
+                <Node name="S_Message.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
           <Node name="MAXSharpExample" expanded="True" />
         </State>
       </Pad>

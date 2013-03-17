@@ -61,6 +61,7 @@
     <Compile Include="ELVMAX_Data\Messages\Types\MAXMessageTypes.cs" />
     <Compile Include="MAXEncodeDecode.cs" />
     <Compile Include="MAXMonitoringThread.cs" />
+    <Compile Include="ELVMAX_Data\Messages\S_Message.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

@@ -7,7 +7,8 @@ namespace MAXSharp
 		H,
 		M,
 		C,
-		L
+		L,
+		S
 	}
 }
 
