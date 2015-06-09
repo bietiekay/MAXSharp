@@ -144,7 +144,7 @@ namespace MAXSharp
 					StringBuilder DeviceRFAddress = new StringBuilder();
 					for(Byte j=0;j<=3-1;j++)
 					{
-						DeviceRFAddress.Append(string.Format("{0:x}", RawMessageDecoded[Cursor]));
+						DeviceRFAddress.Append(string.Format("{0:x}", RawMessageDecoded[Cursor]).PadLeft(2,'0'));
 						//DeviceRFAddress.Append(RawMessageDecoded[Cursor]);
 						Cursor++;
 					}
