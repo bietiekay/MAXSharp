@@ -219,7 +219,7 @@ namespace MAXSharp
 						#endregion
 						
 						// hurray, we've got a device we know how to handle B-)
-						((HeatingThermostat)foundDevice).Temperature = array[Cursor]/2;
+						((HeatingThermostat)foundDevice).Temperature = (double)array[Cursor]/2;
 						Cursor++;
 
                         OutputDeviceList.Add(KnownDevice.SerialNumber,KnownDevice);
@@ -443,7 +443,7 @@ namespace MAXSharp
 						#endregion
 
 						// hurray, we've got a device we know how to handle B-)
-						((HeatingThermostat)foundDevice).Temperature = array[Cursor]/2;
+						((HeatingThermostat)foundDevice).Temperature = (double)array[Cursor]/2;
 						Cursor++;
 					}
 					#endregion
